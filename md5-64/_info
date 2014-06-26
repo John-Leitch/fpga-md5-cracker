@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1
+vMd5Core
+Z1 !s100 WjlP?T7QnFFJLPMSKz`z40
+Z2 Im5^CUdjT2OGl@:95=[nmh0
+Z3 VbYf7o8_Vo5BLEnbiOACT[1
+Z4 dC:\Users\John\Documents\GitHub\md5-64-stage-pipelined-fpga
+Z5 w1403570607
+Z6 8C:/Users/John/Documents/GitHub/md5-64-stage-pipelined-fpga/Md5Core.v
+Z7 FC:/Users/John/Documents/GitHub/md5-64-stage-pipelined-fpga/Md5Core.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|md5-64|C:/Users/John/Documents/GitHub/md5-64-stage-pipelined-fpga/Md5Core.v|
+Z10 o-work md5-64 -O0
+Z11 n@md5@core
+!i10b 1
+!s85 0
+Z12 !s108 1403824273.634000
+Z13 !s107 C:/Users/John/Documents/GitHub/md5-64-stage-pipelined-fpga/Md5Core.v|
+!s101 -O0
+vMd5CoreTest
+!i10b 1
+!s100 a?EINZjH2gRYE>2Sm2g0F2
+IB@_zEYDCDk5[e_<AIF_mn1
+Z14 Vz`IAff;adKcMJ[oAg3oD90
+R4
+w1403824270
+8C:\Users\John\Documents\GitHub\md5-64-stage-pipelined-fpga\Md5CoreTest.v
+FC:\Users\John\Documents\GitHub\md5-64-stage-pipelined-fpga\Md5CoreTest.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1403824273.872000
+!s107 C:\Users\John\Documents\GitHub\md5-64-stage-pipelined-fpga\Md5CoreTest.v|
+!s90 -reportprogress|300|-work|md5-64|C:\Users\John\Documents\GitHub\md5-64-stage-pipelined-fpga\Md5CoreTest.v|
+!s101 -O0
+R10
+Z15 n@md5@core@test

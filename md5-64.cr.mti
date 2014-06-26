@@ -1,0 +1,8 @@
+C:/Users/John/Documents/GitHub/md5-64-stage-pipelined-fpga/Md5Core.v {1 {vlog -work md5-64 C:/Users/John/Documents/GitHub/md5-64-stage-pipelined-fpga/Md5Core.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Md5Core
+
+Top level modules:
+	Md5Core
+
+} {} {}}
