@@ -20,14 +20,6 @@ Md5Core m (
 	.d64(d)
 );
 
-
-BytesToDWord converter(
-  .byte0('hde),
-  .byte1('had),
-  .byte2('hbe),
-  .byte3('hef)
-);
-
 initial
   begin
     clk = 0;
