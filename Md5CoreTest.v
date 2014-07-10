@@ -2,7 +2,7 @@
 
 module Md5CoreTest;
 
-reg clk, reset;
+reg clk, reset, test_all;
 wire [31:0] a, b, c, d;
 reg [31:0] count = 0;
 reg [511:0] chunk;
@@ -18,6 +18,14 @@ Md5Core m (
 	.b64(b), 
 	.c64(c), 
 	.d64(d)
+);
+
+
+BytesToDWord converter(
+  .byte0('hde),
+  .byte1('had),
+  .byte2('hbe),
+  .byte3('hef)
 );
 
 initial
@@ -674,6 +682,9 @@ always @(posedge clk)
   begin
     count <= count + 1;
   end 
+  
+always @(posedge test68)
+  test_all <= test0&test1&test2&test3&test4&test5&test6&test7&test8&test9&test10&test11&test12&test13&test14&test15&test16&test17&test18&test19&test20&test21&test22&test23&test24&test25&test26&test27&test28&test29&test30&test31&test32&test33&test34&test35&test36&test37&test38&test39&test40&test41&test42&test43&test44&test45&test46&test47&test48&test49&test50&test51&test52&test53&test54&test55&test56&test57&test58&test59&test60&test61&test62&test63&test64&test65&test66&test67&test68;
     
 endmodule  
 
