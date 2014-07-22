@@ -35,7 +35,7 @@ Md5ChunkGenerator g(
 );
 */
 
-Md5AsyncCore md5 (
+Md5Core md5 (
 	.clk(clk), 
 	.wb(chunk), 
 	.a0('h67452301), 

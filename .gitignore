@@ -36,3 +36,6 @@ Icon
 .Trashes
 
 *.bak
+*.tdf
+*.cdb
+*.hdb

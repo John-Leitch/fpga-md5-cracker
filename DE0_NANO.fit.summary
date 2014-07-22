@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jul 22 01:39:48 2014
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : DE0_NANO
+Top-level Entity Name : Block3
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 21,281 / 22,320 ( 95 % )
+    Total combinational functions : 18,291 / 22,320 ( 82 % )
+    Dedicated logic registers : 18,468 / 22,320 ( 83 % )
+Total registers : 18468
+Total pins : 24 / 154 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 5,440 / 608,256 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
