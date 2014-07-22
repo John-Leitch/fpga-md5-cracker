@@ -1,12 +1,12 @@
 `define NibbleToBits(__nibble, __bit0, __bit1, __bit2, __bit3)	\
-assign __bit0 = __nibble[0];																\
-assign __bit1 = __nibble[1];																\
-assign __bit2 = __nibble[2];																\
-assign __bit3 = __nibble[3];																\
+assign __bit0 = __nibble[0];									\
+assign __bit1 = __nibble[1];									\
+assign __bit2 = __nibble[2];									\
+assign __bit3 = __nibble[3];									\
 
 module LiquidCrystalDisplay(
 	input clk,
-	input wire [7:0] char,	
+	input wire [7:0] char,
 	input wire writeChar,
 	input wire home,
 	output wire db4,
@@ -25,12 +25,12 @@ module LiquidCrystalDisplay(
 	reg [7:0] commandState = 0;
 	
 	`define CreateDelay(__mhz, __ms, __name, __active, __done)	\
-	reg __active = 0;																						\
-	wire __done;																							\
-	Delay #(.mhz(__mhz), .ms(__ms)) __name(									\
-		.clk(clk),																 									\
-		.active(__active),													 								\
-		.done(__done));																					\
+	reg __active = 0;											\
+	wire __done;												\
+	Delay #(.mhz(__mhz), .ms(__ms)) __name(						\
+		.clk(clk),												\
+		.active(__active),										\
+		.done(__done));											\
 		
 	`CreateDelay(50, 130, powerDelay, powerDelayActive, powerDelayDone)	
 	`CreateDelay(50, 10, wakeupDelay, wakeupDelayActive, wakeupDelayDone)
@@ -70,12 +70,12 @@ module LiquidCrystalDisplay(
 	reg [2:0] wakeupCount = 0;
 	
 	`define SendNibble(__state, __nibble, __nextState)	\
-	__state:																					\
-		begin																					\
-			nibble <= __nibble;														\
-			commandState <= __nextState;								\
-			`SEND_PULSE;															\
-		end																						\
+	__state:											\
+		begin											\
+			nibble <= __nibble;							\
+			commandState <= __nextState;				\
+			`SEND_PULSE;								\
+		end												\
 		
 	always @(posedge clk)
 		begin
@@ -97,7 +97,6 @@ module LiquidCrystalDisplay(
 				
 				1:
 					begin
-												
 						testLeds <= 'b00000111;
 						state <= 2;
 					end
@@ -122,7 +121,7 @@ module LiquidCrystalDisplay(
 										end
 								end
 								
-							`SendNibble(`SET_4BIT_STATE, 'h2, `SET_4BIT_2LINE_STATE1)							
+							`SendNibble(`SET_4BIT_STATE, 'h2, `SET_4BIT_2LINE_STATE1)
 							
 							`SendNibble(`SET_4BIT_2LINE_STATE1, 'h2, `SET_4BIT_2LINE_STATE2)
 							`SendNibble(`SET_4BIT_2LINE_STATE2, 'h8, `SET_CURSOR_STATE1)
@@ -194,7 +193,7 @@ module LiquidCrystalDisplay(
 							begin
 								enable <= 0;
 								state <= `COMMAND_STATE;
-								pulseDelayActive <= 0;								
+								pulseDelayActive <= 0;
 							end
 					end
 			endcase
