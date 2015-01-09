@@ -1,0 +1,77 @@
+﻿<Window x:Class="Md5UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MD5-64 Programmer" Height="185" Width="525">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Width" Value="100" />
+                <Setter Property="Margin" Value="2" />
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Margin" Value="2" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <Label Grid.Row="0" Grid.Column="0" Content="Text"
+                   Visibility="Collapsed" />
+            <TextBox x:Name="TextTextBox" Grid.Row="0" Grid.Column="1"
+                     TextChanged="TextTextBox_TextChanged"
+                     Visibility="Collapsed"/>
+            
+            <Label Grid.Row="1" Grid.Column="0" Content="MD5" />
+            <TextBox x:Name="Md5TextBox" 
+                     Text="527BD5B5D689E2C32AE974C6229FF785"
+                     Grid.Row="1" Grid.Column="1" />
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Min" />
+            <TextBox x:Name="MinTextBox" 
+                     Text="61"
+                     Grid.Row="2" Grid.Column="1" />
+
+            <Label Grid.Row="3" Grid.Column="0" Content="Max" />
+            <TextBox x:Name="MaxTextBox" 
+                     Text="7A"
+                     Grid.Row="3" Grid.Column="1" />
+
+            <Label Grid.Row="4" Grid.Column="0" Content="Count" />
+            <TextBox x:Name="CountTextBox"  IsReadOnly="True"
+                     Grid.Row="4" Grid.Column="1" />
+
+            <!--<DataGrid Grid.Row="5" Grid.ColumnSpan="2" MinHeight="30" AutoGenerateColumns="False"
+                      x:Name="TimeDataGrid">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Length" Binding="{Binding Length}" />
+                    <DataGridTextColumn Header="Count" Binding="{Binding CountFormatted}" />
+                    <DataGridTextColumn Header="Time" Binding="{Binding TimeNeeded}" />
+                </DataGrid.Columns>
+            </DataGrid>-->
+            
+            <StackPanel Grid.Row="6" Orientation="Horizontal" Grid.ColumnSpan="2" HorizontalAlignment="Right">
+                <Button Click="ResetButton_Click" Content="Reset" />
+                <Button Click="ProgramButton_Click" Content="Program" />
+                <!--
+                <Button Click="StartButton_Click" Content="Start" />-->
+            </StackPanel>
+        </Grid>
+        
+    </Grid>
+</Window>
