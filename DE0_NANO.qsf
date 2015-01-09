@@ -6,7 +6,7 @@ set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
 set_global_assignment -name TOP_LEVEL_ENTITY Block3
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
-set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:43:51 FEBRUARY 12,2014"
 set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
@@ -91,6 +91,47 @@ set_location_assignment PIN_P1 -to DRAM_ADDR[9]
 set_location_assignment PIN_N2 -to DRAM_ADDR[10]
 set_location_assignment PIN_N1 -to DRAM_ADDR[11]
 set_location_assignment PIN_L4 -to DRAM_ADDR[12]
+
+#============================================================
+# GPIO_1, GPIO_1 connect to GPIO Default
+#============================================================
+set_location_assignment PIN_T9 -to GPIO_1_IN[0]
+set_location_assignment PIN_F13 -to GPIO_1[0]
+set_location_assignment PIN_R9 -to GPIO_1_IN[1]
+set_location_assignment PIN_T15 -to GPIO_1[1]
+set_location_assignment PIN_T14 -to GPIO_1[2]
+set_location_assignment PIN_T13 -to GPIO_1[3]
+set_location_assignment PIN_R13 -to GPIO_1[4]
+set_location_assignment PIN_T12 -to GPIO_1[5]
+set_location_assignment PIN_R12 -to GPIO_1[6]
+set_location_assignment PIN_T11 -to GPIO_1[7]
+set_location_assignment PIN_T10 -to GPIO_1[8]
+set_location_assignment PIN_R11 -to GPIO_1[9]
+set_location_assignment PIN_P11 -to GPIO_1[10]
+set_location_assignment PIN_R10 -to GPIO_1[11]
+set_location_assignment PIN_N12 -to GPIO_1[12]
+set_location_assignment PIN_P9 -to GPIO_1[13]
+set_location_assignment PIN_N9 -to GPIO_1[14]
+set_location_assignment PIN_N11 -to GPIO_1[15]
+set_location_assignment PIN_L16 -to GPIO_1[16]
+set_location_assignment PIN_K16 -to GPIO_1[17]
+set_location_assignment PIN_R16 -to GPIO_1[18]
+set_location_assignment PIN_L15 -to GPIO_1[19]
+set_location_assignment PIN_P15 -to GPIO_1[20]
+set_location_assignment PIN_P16 -to GPIO_1[21]
+set_location_assignment PIN_R14 -to GPIO_1[22]
+set_location_assignment PIN_N16 -to GPIO_1[23]
+set_location_assignment PIN_N15 -to GPIO_1[24]
+set_location_assignment PIN_P14 -to GPIO_1[25]
+set_location_assignment PIN_L14 -to GPIO_1[26]
+set_location_assignment PIN_N14 -to GPIO_1[27]
+set_location_assignment PIN_M10 -to GPIO_1[28]
+set_location_assignment PIN_L13 -to GPIO_1[29]
+set_location_assignment PIN_J16 -to GPIO_1[30]
+set_location_assignment PIN_K15 -to GPIO_1[31]
+set_location_assignment PIN_J13 -to GPIO_1[32]
+set_location_assignment PIN_J14 -to GPIO_1[33]
+
 
 #============================================================
 # EPCS
@@ -304,6 +345,42 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[30]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[31]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[32]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[33]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1_IN[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1_IN[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[21]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[22]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[23]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[24]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[25]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[26]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[27]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[28]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[29]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[30]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[31]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[32]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[33]
 set_global_assignment -name VERILOG_FILE Md5BruteForcer.v
 set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
 set_global_assignment -name BLOCK_DESIGN_NAMING QUARTUSII

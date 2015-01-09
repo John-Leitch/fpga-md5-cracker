@@ -4,19 +4,20 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
@@ -34,13 +35,12 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 528 48 584 64))
 )
 (pin
 	(input)
-	(rect 168 360 344 376)
+	(rect 144 328 320 344)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "GPIO_IN[0]" (rect 9 0 66 12)(font "Arial" ))
+	(text "GPIO_1[33]" (rect 9 0 66 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -51,13 +51,12 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 112 376 168 392))
 )
 (pin
 	(input)
-	(rect 168 328 344 344)
+	(rect 144 344 320 360)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "GPIO_IN[1]" (rect 9 0 66 12)(font "Arial" ))
+	(text "GPIO_1[31]" (rect 9 0 66 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -68,13 +67,12 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 112 344 168 360))
 )
 (pin
 	(input)
-	(rect 168 344 344 360)
+	(rect 144 360 320 376)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "GPIO_2_IN[0]" (rect 9 0 78 12)(font "Arial" ))
+	(text "GPIO_1[32]" (rect 9 0 66 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -85,24 +83,6 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 112 360 168 376))
-)
-(pin
-	(input)
-	(rect -72 296 104 312)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "GPIO_2_IN[2]" (rect 9 0 78 12)(font "Arial" ))
-	(pt 176 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12))
-		(line (pt 92 4)(pt 117 4))
-		(line (pt 121 8)(pt 176 8))
-		(line (pt 92 12)(pt 92 4))
-		(line (pt 117 4)(pt 121 8))
-		(line (pt 117 12)(pt 121 8))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -136 312 -72 328))
 )
 (pin
 	(output)
@@ -119,126 +99,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1456 328 1512 344))
-)
-(pin
-	(output)
-	(rect 352 984 528 1000)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED[2]" (rect 90 0 124 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 528 1000 584 1016))
-)
-(pin
-	(output)
-	(rect 352 1016 528 1032)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED[3]" (rect 90 0 124 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 528 1032 584 1048))
-)
-(pin
-	(output)
-	(rect 352 1048 528 1064)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED[4]" (rect 90 0 124 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 528 1064 584 1080))
-)
-(pin
-	(output)
-	(rect 280 720 456 736)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED[1]" (rect 90 0 124 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 456 736 512 752))
-)
-(pin
-	(output)
-	(rect 688 1072 864 1088)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "GPIO[5]" (rect 90 0 130 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 864 1088 920 1104))
-)
-(pin
-	(output)
-	(rect 376 904 552 920)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED[5]" (rect 90 0 124 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 552 920 600 936))
-)
-(pin
-	(output)
-	(rect 408 1072 584 1088)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED[6]" (rect 90 0 124 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 584 1088 640 1104))
 )
 (pin
 	(output)
@@ -255,11 +115,10 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1456 280 1512 296))
 )
 (pin
 	(output)
-	(rect 664 344 840 360)
+	(rect 696 344 872 360)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "GPIO[2]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
@@ -272,41 +131,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 792 344 848 360))
-)
-(pin
-	(output)
-	(rect 688 1040 864 1056)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "GPIO[4]" (rect 90 0 130 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 864 1056 920 1072))
-)
-(pin
-	(output)
-	(rect 688 1056 864 1072)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "GPIO[6]" (rect 90 0 130 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 864 1072 920 1088))
 )
 (pin
 	(output)
@@ -323,7 +147,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2160 264 2216 280))
 )
 (pin
 	(output)
@@ -340,7 +163,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2160 280 2216 296))
 )
 (pin
 	(output)
@@ -357,7 +179,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2160 296 2216 312))
 )
 (pin
 	(output)
@@ -374,7 +195,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2160 312 2216 328))
 )
 (pin
 	(output)
@@ -391,7 +211,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2160 328 2216 344))
 )
 (pin
 	(output)
@@ -408,24 +227,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2160 344 2216 360))
-)
-(pin
-	(output)
-	(rect 688 1088 864 1104)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "GPIO[8]" (rect 90 0 130 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 864 1104 920 1120))
 )
 (symbol
 	(rect 1792 224 1984 400)
@@ -463,56 +264,56 @@ applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "db4" (rect 0 0 17 12)(font "Arial" ))
-		(text "db4" (rect 157 27 174 39)(font "Arial" ))
+		(text "db4" (rect 157 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(port
 		(pt 192 48)
 		(output)
 		(text "db5" (rect 0 0 17 12)(font "Arial" ))
-		(text "db5" (rect 157 43 174 55)(font "Arial" ))
+		(text "db5" (rect 157 43 171 55)(font "Arial" ))
 		(line (pt 192 48)(pt 176 48))
 	)
 	(port
 		(pt 192 64)
 		(output)
 		(text "db6" (rect 0 0 17 12)(font "Arial" ))
-		(text "db6" (rect 157 59 174 71)(font "Arial" ))
+		(text "db6" (rect 157 59 171 71)(font "Arial" ))
 		(line (pt 192 64)(pt 176 64))
 	)
 	(port
 		(pt 192 80)
 		(output)
 		(text "db7" (rect 0 0 17 12)(font "Arial" ))
-		(text "db7" (rect 157 75 174 87)(font "Arial" ))
+		(text "db7" (rect 157 75 171 87)(font "Arial" ))
 		(line (pt 192 80)(pt 176 80))
 	)
 	(port
 		(pt 192 96)
 		(output)
 		(text "rs" (rect 0 0 9 12)(font "Arial" ))
-		(text "rs" (rect 164 91 173 103)(font "Arial" ))
+		(text "rs" (rect 164 91 171 103)(font "Arial" ))
 		(line (pt 192 96)(pt 176 96))
 	)
 	(port
 		(pt 192 112)
 		(output)
 		(text "enable" (rect 0 0 31 12)(font "Arial" ))
-		(text "enable" (rect 145 107 176 119)(font "Arial" ))
+		(text "enable" (rect 145 107 171 119)(font "Arial" ))
 		(line (pt 192 112)(pt 176 112))
 	)
 	(port
 		(pt 192 128)
 		(output)
 		(text "testLeds[7..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "testLeds[7..0]" (rect 114 123 182 135)(font "Arial" ))
+		(text "testLeds[7..0]" (rect 114 123 171 135)(font "Arial" ))
 		(line (pt 192 128)(pt 176 128)(line_width 3))
 	)
 	(port
 		(pt 192 144)
 		(output)
 		(text "ready" (rect 0 0 28 12)(font "Arial" ))
-		(text "ready" (rect 148 139 176 151)(font "Arial" ))
+		(text "ready" (rect 148 139 171 151)(font "Arial" ))
 		(line (pt 192 144)(pt 176 144))
 	)
 	(drawing
@@ -548,21 +349,21 @@ applicable agreement for further details.
 		(pt 176 32)
 		(output)
 		(text "char[7..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "char[7..0]" (rect 116 27 163 39)(font "Arial" ))
+		(text "char[7..0]" (rect 116 27 155 39)(font "Arial" ))
 		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(port
 		(pt 176 48)
 		(output)
 		(text "writeChar" (rect 0 0 46 12)(font "Arial" ))
-		(text "writeChar" (rect 117 43 163 55)(font "Arial" ))
+		(text "writeChar" (rect 117 43 155 55)(font "Arial" ))
 		(line (pt 176 48)(pt 160 48))
 	)
 	(port
 		(pt 176 64)
 		(output)
 		(text "home" (rect 0 0 27 12)(font "Arial" ))
-		(text "home" (rect 133 59 160 71)(font "Arial" ))
+		(text "home" (rect 133 59 155 71)(font "Arial" ))
 		(line (pt 176 64)(pt 160 64))
 	)
 	(drawing
@@ -677,21 +478,21 @@ applicable agreement for further details.
 		(pt 320 32)
 		(output)
 		(text "mosiBuffer[BufferSize-1..0]" (rect 0 0 136 12)(font "Arial" ))
-		(text "mosiBuffer[BufferSize-1..0]" (rect 184 27 320 39)(font "Arial" ))
+		(text "mosiBuffer[BufferSize-1..0]" (rect 184 27 299 39)(font "Arial" ))
 		(line (pt 320 32)(pt 304 32)(line_width 3))
 	)
 	(port
 		(pt 320 48)
 		(output)
 		(text "miso" (rect 0 0 23 12)(font "Arial" ))
-		(text "miso" (rect 280 43 303 55)(font "Arial" ))
+		(text "miso" (rect 280 43 299 55)(font "Arial" ))
 		(line (pt 320 48)(pt 304 48))
 	)
 	(port
 		(pt 320 64)
 		(output)
 		(text "shiftComplete" (rect 0 0 69 12)(font "Arial" ))
-		(text "shiftComplete" (rect 241 59 310 71)(font "Arial" ))
+		(text "shiftComplete" (rect 241 59 299 71)(font "Arial" ))
 		(line (pt 320 64)(pt 304 64))
 	)
 	(parameter
@@ -733,14 +534,14 @@ applicable agreement for further details.
 		(pt 168 32)
 		(output)
 		(text "out[31..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "out[31..0]" (rect 108 27 155 39)(font "Arial" ))
+		(text "out[31..0]" (rect 108 27 147 39)(font "Arial" ))
 		(line (pt 168 32)(pt 152 32)(line_width 3))
 	)
 	(port
 		(pt 168 48)
 		(output)
 		(text "saved" (rect 0 0 30 12)(font "Arial" ))
-		(text "saved" (rect 122 43 152 55)(font "Arial" ))
+		(text "saved" (rect 122 43 147 55)(font "Arial" ))
 		(line (pt 168 48)(pt 152 48))
 	)
 	(drawing
@@ -971,6 +772,22 @@ applicable agreement for further details.
 (connector
 	(pt 1544 416)
 	(pt 2000 416)
+)
+(connector
+	(pt 320 336)
+	(pt 344 336)
+)
+(connector
+	(pt 320 352)
+	(pt 344 352)
+)
+(connector
+	(pt 320 368)
+	(pt 344 368)
+)
+(connector
+	(pt 664 352)
+	(pt 696 352)
 )
 (junction (pt 1064 272))
 (junction (pt 1544 224))
