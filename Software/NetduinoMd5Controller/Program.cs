@@ -173,7 +173,7 @@ namespace NetduinoMd5Controller
 
     public class Program
     {
-        private static Md5Chip _md5Chip;// = new Md5Chip();        
+        private static Md5Chip _md5Chip = new Md5Chip();        
 
         private static Socket client;
 
