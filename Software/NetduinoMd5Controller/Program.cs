@@ -235,83 +235,29 @@ namespace NetduinoMd5Controller
 
         public static void Main()
         {
-            var programmer = new CpuProgrammer();
-            programmer.Break();
-            var instructions = programmer.ReadBuffer(0, 332);
-            programmer.Continue();
-            var inst = programmer.Read4(0x0);
-            var contetx = programmer.GetContext();
-
             while (true)
             {
-                //_md5Chip.Spi.WriteRead(0x52300002);
+                var networkInterface = NetworkInterface.GetAllNetworkInterfaces()[0];
+                Debug.Print(networkInterface.IPAddress.ToString());
+                networkInterface.EnableStaticIP("192.168.1.200", "255.255.255.0", "192.168.1.1");
 
-                var a = _md5Chip.Spi.WriteRead(0x52300000);
-                var aasd = _md5Chip.Spi.WriteRead((uint)0x00000);
-                var a2 = _md5Chip.Spi.WriteRead(0x52300001);
-                var aasd2 = _md5Chip.Spi.WriteRead((uint)0x00000);
-
-                _md5Chip.Spi.WriteRead(0x52300050);
-                var programCounter = _md5Chip.Spi.WriteRead((uint)0x00000);
-
-                _md5Chip.Spi.WriteRead(0x52300051);
-                var instructionAddress = _md5Chip.Spi.WriteRead((uint)0x00000);
-
-                _md5Chip.Spi.WriteRead(0x52300052);
-                var error = _md5Chip.Spi.WriteRead((uint)0x00000);
-
-                _md5Chip.Spi.WriteRead(0x52300053);
-                var errorCode = _md5Chip.Spi.WriteRead((uint)0x00000);
-
-                //var b = _md5Chip.Spi.WriteRead(0x52300030);
-                //var c = _md5Chip.Spi.WriteRead((uint)0x00000000);
-
-                //var d = _md5Chip.Spi.WriteRead(0x52300040);
-                //var e = _md5Chip.Spi.WriteRead(0xAABBCCDD);
-
-                uint address = 0;
-
-                //for (address = 0; address < 100; address += 4)
-                //{
-                    var f = _md5Chip.Spi.WriteRead(0x52300010);
-                    //var g = _md5Chip.Spi.WriteRead((uint)0x00000000);
-                    var g = _md5Chip.Spi.WriteRead(address);
-
-
-                    var h = _md5Chip.Spi.WriteRead(0x52300020);
-
-                    var i = _md5Chip.Spi.WriteRead((uint)0x00000000);
-                //    break;
-                //}
-
-                var z = _md5Chip.Spi.WriteRead(0x52300002);
-                var crap = _md5Chip.Spi.WriteRead((uint)0x00000000);
-                
-            }
-            //TestCount();
-            //TestTransfer();
-            var networkInterface = NetworkInterface.GetAllNetworkInterfaces()[0];
-
-            Debug.Print(networkInterface.IPAddress.ToString());
-            //networkInterface.IsDynamicDnsEnabled = false;
-            // 
-            networkInterface.EnableStaticIP("192.168.1.200", "255.255.255.0", "192.168.1.1");
-            using (var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
-            {
-                socket.Bind(new IPEndPoint(IPAddress.Any, 5230));
-                socket.Listen(1);
-
-                while (true)
+                using (var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
                 {
-                    using (client = socket.Accept())
-                    {
-                        clientActive = true;
+                    socket.Bind(new IPEndPoint(IPAddress.Any, 5230));
+                    socket.Listen(1);
 
-                        while (clientActive)
+                    while (true)
+                    {
+                        using (client = socket.Accept())
                         {
-                            var buffer = new byte[5];
-                            client.Receive(buffer);
-                            InterpretCommand(buffer);
+                            clientActive = true;
+
+                            while (clientActive)
+                            {
+                                var buffer = new byte[5];
+                                client.Receive(buffer);
+                                InterpretCommand(buffer);
+                            }
                         }
                     }
                 }
