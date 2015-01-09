@@ -199,8 +199,10 @@ namespace Md5UI
 
                     lock (_stream)
                     {
-                        _stream.Write(
-                            new byte[] 
+                        try
+                        {
+                            _stream.Write(
+                                new byte[] 
                             {
                                 (byte)CommandOpcode.GetCount,
                                 0,
@@ -208,8 +210,13 @@ namespace Md5UI
                                 0,
                                 0,
                             },
-                            0,
-                            5);
+                                0,
+                                5);
+                        }
+                        catch
+                        {
+                            break;
+                        }
 
                         var buffer = new byte[8];
                         _stream.Read(buffer, 0, buffer.Length);
