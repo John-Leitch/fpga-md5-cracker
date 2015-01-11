@@ -1,0 +1,30 @@
+
+DE0-Nano JP2 38 -> Netduino Plus 2 D10
+DE0-Nano JP2 39 -> Netduino Plus 2 D11
+DE0-Nano JP1 5  -> Netduino Plus 2 D12
+DE0-Nano JP2 40 -> Netduino Plus 2 D13
+DE0-Nano JP1 30 -> Netduino Plus 2 Gnd
+DE0-Nano JP1 35 -> LCD Shield D4
+DE0-Nano JP1 36 -> LCD Shield D5
+DE0-Nano JP1 37 -> LCD Shield D6
+DE0-Nano JP1 38 -> LCD Shield D7
+DE0-Nano JP1 39 -> LCD Shield D8
+DE0-Nano JP1 40 -> LCD Shield D9
+DE0-Nano JP1 11 -> LCD Shield 5v
+DE0-Nano JP1 12 -> LCD Shield Gnd
+
+================================================================
+SS      | JP2 38 | GPIO_1[31] | PIN_K15 | Netduino Plus 2 D10
+MOSI    | JP2 39 | GPIO_1[32] | PIN_J13 | Netduino Plus 2 D11
+MISO    | JP1 5  | GPIO[2]    | PIN_A2  | Netduino Plus 2 D12
+SCK     | JP2 40 | GPIO_1[33] | PIN_J14 | Netduino Plus 2 D13
+GND     | JP1 30 |            |         | Netduino Plus 2 Gnd
+DB4     | JP1 35 | GPIO[28]   | PIN_C11 | LCD Shield D4
+DB5     | JP1 36 | GPIO[29]   | PIN_B11 | LCD Shield D5
+DB6     | JP1 37 | GPIO[30]   | PIN_A12 | LCD Shield D6
+DB7     | JP1 38 | GPIO[31]   | PIN_D11 | LCD Shield D7
+RS      | JP1 39 | GPIO[32]   | PIN_D12 | LCD Shield D8
+ENABLE  | JP1 40 | GPIO[33]   | PIN_B12 | LCD Shield D9
+VCC_SYS | JP1 11 |            |         | LCD Shield 5v
+GND     | JP1 12 |            |         | LCD Shield Gnd
+================================================================
