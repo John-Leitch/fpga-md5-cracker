@@ -39,3 +39,11 @@ Icon
 *.tdf
 *.cdb
 *.hdb
+*.done
+*.rpt
+*.summary
+
+db/
+incremental_db/
+
+PLLJ_PLLSPE_INFO.txt
