@@ -34,7 +34,6 @@
   <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
   <ItemGroup>
     <Compile Include="BigEndianBitConverter.cs" />
-    <Compile Include="CpuContext.cs" />
     <Compile Include="Md5Chip.cs" />
     <Compile Include="OutputPortExtension.cs" />
     <Compile Include="Md5ChipCommands.cs" />

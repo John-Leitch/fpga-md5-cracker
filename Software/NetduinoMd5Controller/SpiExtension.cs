@@ -19,10 +19,5 @@ namespace NetduinoMd5Controller
         {
             return spi.WriteRead((uint)command);
         }
-
-        public static uint WriteRead(this SPI spi, CpuCommand command)
-        {
-            return spi.WriteRead((uint)command);
-        }
     }
 }

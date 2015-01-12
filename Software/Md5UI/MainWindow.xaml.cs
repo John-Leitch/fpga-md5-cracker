@@ -180,14 +180,6 @@ namespace Md5UI
 
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            //var calc = new KeyspaceCalculator();
-            //calc.StartByte = (byte)'a';
-            //calc.EndByte = (byte)'z';
-            //calc.TestsPerSecond = 100000000;
-            //var table = calc.GetCombinationTable();
-            //TimeDataGrid.ItemsSource = table;
-            //return;
-
             _client = new TcpClient();
             _client.Connect("192.168.1.200", 5230);
             _stream = _client.GetStream();
@@ -203,13 +195,13 @@ namespace Md5UI
                         {
                             _stream.Write(
                                 new byte[] 
-                            {
-                                (byte)CommandOpcode.GetCount,
-                                0,
-                                0,
-                                0,
-                                0,
-                            },
+                                {
+                                    (byte)CommandOpcode.GetCount,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                },
                                 0,
                                 5);
                         }
