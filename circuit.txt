@@ -1,3 +1,13 @@
+This project is a hardware MD5 cracker built around a high-throughput, pipelined implementation of the MD5 hash function. It consists of three devices:
+
+DE0-Nano FPGA
+The workhorse. Other FPGAs will likely work, but this is the one I went with. The design is quite large, consuming 21,257/22,320 (95%) of the logical elements.
+
+Netduino Plus 2
+Acts as a programmer, interfacing with the FPGA design via SPI and the computer using Ethernet. I chose the NP2 because it was the only 3.3v SPI master device I had on hand. Others should work, but if you use a DE0-Nano, keep in mind the Cyclone IV is not 5v tolerant. It's also worth noting that, should one choose another device, they'll likely have to rewrite the programmer since the current implementation is written in C#.
+
+Arduino LCD Shield
+Displays the output of the cracker. Of course, this doesn't have to be an Arduino shield, but that's what I had. Any Hitachi HD44780 compatible LCD should work. To simplify wiring, the cracker uses the LCD in 4-bit mode.
 
 DE0-Nano JP2 38 -> Netduino Plus 2 D10
 DE0-Nano JP2 39 -> Netduino Plus 2 D11
