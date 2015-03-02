@@ -28,18 +28,19 @@ Displays the output of the cracker. Of course, this doesn't have to be an Arduin
 | JP1 11   | LCD Shield 5v       |
 | JP1 12   | LCD Shield Gnd      |
 
-| Name    | Jumper | Node Name  | Location | Netduino Plus 2/LCD |
-| :------ | :- ----| :--------- | :------  | :------------------ |
-| SS      | JP2 38 | GPIO_1[31] | PIN_K15  | Netduino Plus 2 D10 |
-| MOSI    | JP2 39 | GPIO_1[32] | PIN_J13  | Netduino Plus 2 D11 |
-| MISO    | JP1 5  | GPIO[2]    | PIN_A2   | Netduino Plus 2 D12 |
-| SCK     | JP2 40 | GPIO_1[33] | PIN_J14  | Netduino Plus 2 D13 |
-| GND     | JP1 30 |            |          | Netduino Plus 2 Gnd |
-| DB4     | JP1 35 | GPIO[28]   | PIN_C11  | LCD Shield D4       |
-| DB5     | JP1 36 | GPIO[29]   | PIN_B11  | LCD Shield D5       |
-| DB6     | JP1 37 | GPIO[30]   | PIN_A12  | LCD Shield D6       |
-| DB7     | JP1 38 | GPIO[31]   | PIN_D11  | LCD Shield D7       |
-| RS      | JP1 39 | GPIO[32]   | PIN_D12  | LCD Shield D8       |
-| ENABLE  | JP1 40 | GPIO[33]   | PIN_B12  | LCD Shield D9       |
-| VCC_SYS | JP1 11 |            |          | LCD Shield 5v       |
-| GND     | JP1 12 |            |          | LCD Shield Gnd      |
+| Name     | Jumper | Node Name     | Location | Netduino Plus/2 LCD |
+| :------- | :----- | :------------ | :------- | :------------------ |
+| SS       | JP2 38 | GPIO\_1\[31\] | PIN\_K15 | Netduino Plus 2 D10 |
+| MOSI     | JP2 39 | GPIO\_1\[32\] | PIN\_J13 | Netduino Plus 2 D11 |
+| MISO     | JP1 5  | GPIO\[2\]     | PIN\_A2  | Netduino Plus 2 D12 |
+| SCK      | JP2 40 | GPIO\_1\[33\] | PIN\_J14 | Netduino Plus 2 D13 |
+| GND      | JP1 30 |               |          | Netduino Plus 2 Gnd |
+| DB4      | JP1 35 | GPIO\[28\]    | PIN\_C11 | LCD Shield D4       |
+| DB5      | JP1 36 | GPIO\[29\]    | PIN\_B11 | LCD Shield D5       |
+| DB6      | JP1 37 | GPIO\[30\]    | PIN\_A12 | LCD Shield D6       |
+| DB7      | JP1 38 | GPIO\[31\]    | PIN\_D11 | LCD Shield D7       |
+| RS       | JP1 39 | GPIO\[32\]    | PIN\_D12 | LCD Shield D8       |
+| ENABLE   | JP1 40 | GPIO\[33\]    | PIN\_B12 | LCD Shield D9       |
+| VCC\_SYS | JP1 11 |               |          | LCD Shield 5v       |
+| GND      | JP1 12 |               |          | LCD Shield Gnd      |
+
