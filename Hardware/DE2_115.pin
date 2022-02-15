@@ -497,8 +497,8 @@ GNDA3                        : H9        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : H10       :        :                   :         : 8         :                
 VCCIO8                       : H11       : power  :                   : 3.3V    : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H12       :        :                   :         : 8         :                
-EX_IO_IN[2]                  : H13       : output : 3.3-V LVTTL       :         : 8         : Y              
-EX_IO[3]                     : H14       : input  : 3.3-V LVTTL       :         : 8         : Y              
+EX_IO[2]                     : H13       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+EX_IO[3]                     : H14       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H16       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H17       :        :                   :         : 7         :                
@@ -522,11 +522,11 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : J6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : J7        :        :                   :         : 1         :                
 VCCA3                        : J8        : power  :                   : 2.5V    :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
-EX_IO[0]                     : J10       : input  : 3.3-V LVTTL       :         : 8         : Y              
+EX_IO[0]                     : J10       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 GND                          : J11       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J12       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J13       :        :                   :         : 8         :                
-EX_IO[1]                     : J14       : input  : 3.3-V LVTTL       :         : 8         : Y              
+EX_IO[1]                     : J14       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : J15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J16       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J17       :        :                   :         : 7         :                

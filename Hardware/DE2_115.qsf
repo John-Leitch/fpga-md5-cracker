@@ -25,6 +25,7 @@ set_location_assignment PIN_AG15 -to CLOCK3_50
 #============================================================
 set_location_assignment PIN_J10 -to EX_IO[0]
 set_location_assignment PIN_J14 -to EX_IO[1]
+set_location_assignment PIN_H13 -to EX_IO[2]
 set_location_assignment PIN_H14 -to EX_IO[3]
 set_location_assignment PIN_F14 -to EX_IO[4]
 set_location_assignment PIN_E10 -to EX_IO[5]
@@ -61,6 +62,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK3_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[4]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[5]
@@ -95,11 +97,9 @@ set_global_assignment -name BDF_FILE Block3.bdf
 set_global_assignment -name SDC_FILE DE2_115.SDC
 set_global_assignment -name QIP_FILE pll2.qip
 set_global_assignment -name BLOCK_DESIGN_NAMING QUARTUSII
-set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_global_assignment -name OPTIMIZATION_MODE "AGGRESSIVE PERFORMANCE"
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS 16
 set_global_assignment -name SMART_RECOMPILE ON
 set_global_assignment -name FLOW_ENABLE_IO_ASSIGNMENT_ANALYSIS ON
-set_location_assignment PIN_H13 -to EX_IO_IN[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO_IN[2]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
